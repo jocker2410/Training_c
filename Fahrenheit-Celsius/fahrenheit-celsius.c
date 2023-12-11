@@ -2,13 +2,13 @@
 
 main()
 {
-	float fahr, cel
+	float fahr, cel;
 	fahr = 0; 
 
 	while (fahr <= 300)
 	{
 		cel = (5/9) * (fahr - 32);
-		print("%4.0f %6.1f\n", fahr, cel);
+		printf("%4.0f %6.1f\n", fahr, cel);
 		fahr += 20;
 	}	
 
