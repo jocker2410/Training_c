@@ -14,8 +14,15 @@ int main()
 	
 	while(str[i] != '\0')
 	{
-		printf("%c", str[i]);
-		++i;
+		if ( str[i] == ' ')
+		{
+			printf("_");
+			++i;
+		}
+		else{
+			printf("%c", str[i]);
+			++i;
+		}
 	}
 	--i;
 	printf("Num Char:%d", i);
